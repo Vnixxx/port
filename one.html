@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e7e2cd047.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#language">Language</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#works">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container" id="header">
+        <div class="header-text">
+            <p>"If life were predictable it would <br> cease to be life, and be without flavor"</p>
+            <h1>- Eleanor Roosevelt</h1>
+        </div>
+    </div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/child.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI</span><br>Image classification/Linear regression</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Competitive Programming</span><br>C/C++ Competitive Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><h1>2022</h1></span></li>
+                        <li><span>March</span><br>Participated in NSC Final Round</li>
+                        <li><span>April - May</span><br>POSN Camp 1 & 2</li>
+                        <li><span>August</span><br>Participated in CAI Hackathon</li>
+                        <li><span>September</span><br>Silver medal - Science Symposium 2022</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Now</span><br>Princess Chulabhorn Science High School Chonburi</li>
+                        <li><span>2013 - 2020</span><br>Maryvit Bowin School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------lang---------------- -->
+<div id="language">
+    <div class="container">
+        <h1 class="sub-title">Language</h1>
+        <div class="services-list">
+            <div>
+                <h2>Python</h2>
+                <p>I have learned Python for 3 years.</p>
+                <p>Skill in Python: AI, Competitive Programming, Web Application</p>
+            </div>
+            <div>
+                <h2>C/C++</h2>
+                <p>I love competition so competitive programming is my taste.</p>
+                <p>Skill in C/C++: Competitive programming, a little bit in Arduino</p>
+            </div>
+            <div>
+                <h2>HTML</h2>
+                <p>I'm new in HTML but I try to improve myself every day.</p>
+                <p>Skill in HTML: Front development with some CSS and JS</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------work------------ -->
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/covid.jpeg">
+                <div class="layer">
+                    <h3>Web Application </h3>
+                    <p>Web for Classification Covid Pneumonia Patient from Other Diseases. See it here.</p>
+                    <a href="https://github.com/Vnixxx/str"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> panidarumriankit@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0902731813</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100044922601885"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/052280ti_/?next=%2Faccounts%2Fonetap%2F"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xyyvdged" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="message" placeholder="Message" required> 
+                    <button type="submit" class="btn btn2">Send</button>
+               </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("ul.navbar-nav > li > a").click(
+          function (e) {
+            $("ul.navbar-nav > li").removeClass(
+              "active");
+            $("ul.navbar-nav > li > a").css(
+              "color", "#909993");
+
+            $(this).addClass("active");
+            $(this).css("color", "white");
+        });
+    });
+</script>
+
+</body>
+</html>
